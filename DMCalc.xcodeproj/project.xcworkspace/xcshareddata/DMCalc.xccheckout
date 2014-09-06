@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A09B8782-BA2E-469E-837B-436736CE0D6E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DMCalc</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C4FBF1CB-EDB8-41A9-8AF1-6FF608D6F1BB</key>
+		<string>https://github.com/timothytong/DMCalc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DMCalc/DMCalc.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C4FBF1CB-EDB8-41A9-8AF1-6FF608D6F1BB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/timothytong/DMCalc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C4FBF1CB-EDB8-41A9-8AF1-6FF608D6F1BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C4FBF1CB-EDB8-41A9-8AF1-6FF608D6F1BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DMCalc</string>
+		</dict>
+	</array>
+</dict>
+</plist>

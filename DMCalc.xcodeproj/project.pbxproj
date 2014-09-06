@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33013BA019BA4D62003AAF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013B9F19BA4D62003AAF84 /* Foundation.framework */; };
+		33013BA219BA4D62003AAF84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013BA119BA4D62003AAF84 /* CoreGraphics.framework */; };
+		33013BA419BA4D62003AAF84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013BA319BA4D62003AAF84 /* UIKit.framework */; };
+		33013BAA19BA4D62003AAF84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33013BA819BA4D62003AAF84 /* InfoPlist.strings */; };
+		33013BAC19BA4D62003AAF84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BAB19BA4D62003AAF84 /* main.m */; };
+		33013BB019BA4D62003AAF84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BAF19BA4D62003AAF84 /* AppDelegate.m */; };
+		33013BB319BA4D62003AAF84 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33013BB119BA4D62003AAF84 /* Main_iPhone.storyboard */; };
+		33013BB619BA4D62003AAF84 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33013BB419BA4D62003AAF84 /* Main_iPad.storyboard */; };
+		33013BBB19BA4D62003AAF84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33013BBA19BA4D62003AAF84 /* Images.xcassets */; };
+		33013BC219BA4D63003AAF84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013BC119BA4D63003AAF84 /* XCTest.framework */; };
+		33013BC319BA4D63003AAF84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013B9F19BA4D62003AAF84 /* Foundation.framework */; };
+		33013BC419BA4D63003AAF84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33013BA319BA4D62003AAF84 /* UIKit.framework */; };
+		33013BCC19BA4D63003AAF84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33013BCA19BA4D63003AAF84 /* InfoPlist.strings */; };
+		33013BCE19BA4D63003AAF84 /* DMCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BCD19BA4D63003AAF84 /* DMCalcTests.m */; };
+		33013BE319BA4DBB003AAF84 /* Calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BD819BA4DBB003AAF84 /* Calculator@2x.png */; };
+		33013BE419BA4DBB003AAF84 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BD919BA4DBB003AAF84 /* cancel.png */; };
+		33013BE519BA4DBB003AAF84 /* Favorites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDA19BA4DBB003AAF84 /* Favorites@2x.png */; };
+		33013BE619BA4DBB003AAF84 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDB19BA4DBB003AAF84 /* leftArrow.png */; };
+		33013BE719BA4DBB003AAF84 /* line_long.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDC19BA4DBB003AAF84 /* line_long.png */; };
+		33013BE819BA4DBB003AAF84 /* Line_short.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDD19BA4DBB003AAF84 /* Line_short.png */; };
+		33013BE919BA4DBB003AAF84 /* Line_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDE19BA4DBB003AAF84 /* Line_vertical.png */; };
+		33013BEA19BA4DBB003AAF84 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BDF19BA4DBB003AAF84 /* rightArrow.png */; };
+		33013BEB19BA4DBB003AAF84 /* Search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BE019BA4DBB003AAF84 /* Search@2x.png */; };
+		33013BEC19BA4DBB003AAF84 /* separator_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BE119BA4DBB003AAF84 /* separator_line.png */; };
+		33013BED19BA4DBB003AAF84 /* solutions.png in Resources */ = {isa = PBXBuildFile; fileRef = 33013BE219BA4DBB003AAF84 /* solutions.png */; };
+		33013BF619BA4E0E003AAF84 /* GCDCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BF119BA4E0E003AAF84 /* GCDCalc.m */; };
+		33013BF719BA4E0E003AAF84 /* LDECalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BF319BA4E0E003AAF84 /* LDECalc.m */; };
+		33013BF819BA4E0E003AAF84 /* RSSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BF519BA4E0E003AAF84 /* RSSolver.m */; };
+		33013C0919BA4E75003AAF84 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BFB19BA4E75003AAF84 /* AboutViewController.m */; };
+		33013C0A19BA4E75003AAF84 /* DivModViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BFD19BA4E75003AAF84 /* DivModViewController.m */; };
+		33013C0B19BA4E75003AAF84 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013BFF19BA4E75003AAF84 /* GCDViewController.m */; };
+		33013C0C19BA4E75003AAF84 /* LDEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013C0119BA4E75003AAF84 /* LDEViewController.m */; };
+		33013C0D19BA4E75003AAF84 /* LinearCongruenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013C0319BA4E75003AAF84 /* LinearCongruenceViewController.m */; };
+		33013C0F19BA4E75003AAF84 /* RepeatedSquaringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013C0619BA4E75003AAF84 /* RepeatedSquaringViewController.m */; };
+		33013C1019BA4E75003AAF84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013C0819BA4E75003AAF84 /* ViewController.m */; };
+		33013C1419BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 33013C1319BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33013BC519BA4D63003AAF84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33013B9419BA4D62003AAF84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33013B9B19BA4D62003AAF84;
+			remoteInfo = DMCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33013B9C19BA4D62003AAF84 /* DMCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33013B9F19BA4D62003AAF84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		33013BA119BA4D62003AAF84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		33013BA319BA4D62003AAF84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		33013BA719BA4D62003AAF84 /* DMCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMCalc-Info.plist"; sourceTree = "<group>"; };
+		33013BA919BA4D62003AAF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33013BAB19BA4D62003AAF84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33013BAD19BA4D62003AAF84 /* DMCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCalc-Prefix.pch"; sourceTree = "<group>"; };
+		33013BAE19BA4D62003AAF84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33013BAF19BA4D62003AAF84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33013BB219BA4D62003AAF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		33013BB519BA4D62003AAF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		33013BBA19BA4D62003AAF84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33013BC019BA4D63003AAF84 /* DMCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33013BC119BA4D63003AAF84 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		33013BC919BA4D63003AAF84 /* DMCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMCalcTests-Info.plist"; sourceTree = "<group>"; };
+		33013BCB19BA4D63003AAF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33013BCD19BA4D63003AAF84 /* DMCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCalcTests.m; sourceTree = "<group>"; };
+		33013BD819BA4DBB003AAF84 /* Calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calculator@2x.png"; path = "images/Calculator@2x.png"; sourceTree = "<group>"; };
+		33013BD919BA4DBB003AAF84 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancel.png; path = images/cancel.png; sourceTree = "<group>"; };
+		33013BDA19BA4DBB003AAF84 /* Favorites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Favorites@2x.png"; path = "images/Favorites@2x.png"; sourceTree = "<group>"; };
+		33013BDB19BA4DBB003AAF84 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftArrow.png; path = images/leftArrow.png; sourceTree = "<group>"; };
+		33013BDC19BA4DBB003AAF84 /* line_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line_long.png; path = images/line_long.png; sourceTree = "<group>"; };
+		33013BDD19BA4DBB003AAF84 /* Line_short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Line_short.png; path = images/Line_short.png; sourceTree = "<group>"; };
+		33013BDE19BA4DBB003AAF84 /* Line_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Line_vertical.png; path = images/Line_vertical.png; sourceTree = "<group>"; };
+		33013BDF19BA4DBB003AAF84 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightArrow.png; path = images/rightArrow.png; sourceTree = "<group>"; };
+		33013BE019BA4DBB003AAF84 /* Search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Search@2x.png"; path = "images/Search@2x.png"; sourceTree = "<group>"; };
+		33013BE119BA4DBB003AAF84 /* separator_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = separator_line.png; path = images/separator_line.png; sourceTree = "<group>"; };
+		33013BE219BA4DBB003AAF84 /* solutions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = solutions.png; path = images/solutions.png; sourceTree = "<group>"; };
+		33013BEE19BA4DD4003AAF84 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		33013BF019BA4E0E003AAF84 /* GCDCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDCalc.h; path = DMCalc/Calculators/GCDCalc.h; sourceTree = "<group>"; };
+		33013BF119BA4E0E003AAF84 /* GCDCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDCalc.m; path = DMCalc/Calculators/GCDCalc.m; sourceTree = "<group>"; };
+		33013BF219BA4E0E003AAF84 /* LDECalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDECalc.h; path = DMCalc/Calculators/LDECalc.h; sourceTree = "<group>"; };
+		33013BF319BA4E0E003AAF84 /* LDECalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDECalc.m; path = DMCalc/Calculators/LDECalc.m; sourceTree = "<group>"; };
+		33013BF419BA4E0E003AAF84 /* RSSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSolver.h; path = DMCalc/Calculators/RSSolver.h; sourceTree = "<group>"; };
+		33013BF519BA4E0E003AAF84 /* RSSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSolver.m; path = DMCalc/Calculators/RSSolver.m; sourceTree = "<group>"; };
+		33013BFA19BA4E75003AAF84 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ViewControllers/AboutViewController.h; sourceTree = "<group>"; };
+		33013BFB19BA4E75003AAF84 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ViewControllers/AboutViewController.m; sourceTree = "<group>"; };
+		33013BFC19BA4E75003AAF84 /* DivModViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DivModViewController.h; path = ViewControllers/DivModViewController.h; sourceTree = "<group>"; };
+		33013BFD19BA4E75003AAF84 /* DivModViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DivModViewController.m; path = ViewControllers/DivModViewController.m; sourceTree = "<group>"; };
+		33013BFE19BA4E75003AAF84 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDViewController.h; path = ViewControllers/GCDViewController.h; sourceTree = "<group>"; };
+		33013BFF19BA4E75003AAF84 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDViewController.m; path = ViewControllers/GCDViewController.m; sourceTree = "<group>"; };
+		33013C0019BA4E75003AAF84 /* LDEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDEViewController.h; path = ViewControllers/LDEViewController.h; sourceTree = "<group>"; };
+		33013C0119BA4E75003AAF84 /* LDEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDEViewController.m; path = ViewControllers/LDEViewController.m; sourceTree = "<group>"; };
+		33013C0219BA4E75003AAF84 /* LinearCongruenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinearCongruenceViewController.h; path = ViewControllers/LinearCongruenceViewController.h; sourceTree = "<group>"; };
+		33013C0319BA4E75003AAF84 /* LinearCongruenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinearCongruenceViewController.m; path = ViewControllers/LinearCongruenceViewController.m; sourceTree = "<group>"; };
+		33013C0519BA4E75003AAF84 /* RepeatedSquaringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepeatedSquaringViewController.h; path = ViewControllers/RepeatedSquaringViewController.h; sourceTree = "<group>"; };
+		33013C0619BA4E75003AAF84 /* RepeatedSquaringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RepeatedSquaringViewController.m; path = ViewControllers/RepeatedSquaringViewController.m; sourceTree = "<group>"; };
+		33013C0719BA4E75003AAF84 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewControllers/ViewController.h; sourceTree = "<group>"; };
+		33013C0819BA4E75003AAF84 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewControllers/ViewController.m; sourceTree = "<group>"; };
+		33013C1219BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatedSquaringSolutionsSlider.h; sourceTree = "<group>"; };
+		33013C1319BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatedSquaringSolutionsSlider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33013B9919BA4D62003AAF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013BA219BA4D62003AAF84 /* CoreGraphics.framework in Frameworks */,
+				33013BA419BA4D62003AAF84 /* UIKit.framework in Frameworks */,
+				33013BA019BA4D62003AAF84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33013BBD19BA4D63003AAF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013BC219BA4D63003AAF84 /* XCTest.framework in Frameworks */,
+				33013BC419BA4D63003AAF84 /* UIKit.framework in Frameworks */,
+				33013BC319BA4D63003AAF84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33013B9319BA4D62003AAF84 = {
+			isa = PBXGroup;
+			children = (
+				33013BA519BA4D62003AAF84 /* DMCalc */,
+				33013BC719BA4D63003AAF84 /* DMCalcTests */,
+				33013B9E19BA4D62003AAF84 /* Frameworks */,
+				33013B9D19BA4D62003AAF84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33013B9D19BA4D62003AAF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33013B9C19BA4D62003AAF84 /* DMCalc.app */,
+				33013BC019BA4D63003AAF84 /* DMCalcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33013B9E19BA4D62003AAF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33013B9F19BA4D62003AAF84 /* Foundation.framework */,
+				33013BA119BA4D62003AAF84 /* CoreGraphics.framework */,
+				33013BA319BA4D62003AAF84 /* UIKit.framework */,
+				33013BC119BA4D63003AAF84 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33013BA519BA4D62003AAF84 /* DMCalc */ = {
+			isa = PBXGroup;
+			children = (
+				33013BEE19BA4DD4003AAF84 /* Constants.h */,
+				33013BAE19BA4D62003AAF84 /* AppDelegate.h */,
+				33013BAF19BA4D62003AAF84 /* AppDelegate.m */,
+				33013BB119BA4D62003AAF84 /* Main_iPhone.storyboard */,
+				33013BB419BA4D62003AAF84 /* Main_iPad.storyboard */,
+				33013BBA19BA4D62003AAF84 /* Images.xcassets */,
+				33013C1119BA4EA6003AAF84 /* Sliders */,
+				33013BF919BA4E28003AAF84 /* ViewControllers */,
+				33013BD719BA4DAB003AAF84 /* Images */,
+				33013BEF19BA4DF2003AAF84 /* Calculators */,
+				33013BA619BA4D62003AAF84 /* Supporting Files */,
+			);
+			path = DMCalc;
+			sourceTree = "<group>";
+		};
+		33013BA619BA4D62003AAF84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33013BA719BA4D62003AAF84 /* DMCalc-Info.plist */,
+				33013BA819BA4D62003AAF84 /* InfoPlist.strings */,
+				33013BAB19BA4D62003AAF84 /* main.m */,
+				33013BAD19BA4D62003AAF84 /* DMCalc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33013BC719BA4D63003AAF84 /* DMCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				33013BCD19BA4D63003AAF84 /* DMCalcTests.m */,
+				33013BC819BA4D63003AAF84 /* Supporting Files */,
+			);
+			path = DMCalcTests;
+			sourceTree = "<group>";
+		};
+		33013BC819BA4D63003AAF84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33013BC919BA4D63003AAF84 /* DMCalcTests-Info.plist */,
+				33013BCA19BA4D63003AAF84 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33013BD719BA4DAB003AAF84 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				33013BD819BA4DBB003AAF84 /* Calculator@2x.png */,
+				33013BD919BA4DBB003AAF84 /* cancel.png */,
+				33013BDA19BA4DBB003AAF84 /* Favorites@2x.png */,
+				33013BDB19BA4DBB003AAF84 /* leftArrow.png */,
+				33013BDC19BA4DBB003AAF84 /* line_long.png */,
+				33013BDD19BA4DBB003AAF84 /* Line_short.png */,
+				33013BDE19BA4DBB003AAF84 /* Line_vertical.png */,
+				33013BDF19BA4DBB003AAF84 /* rightArrow.png */,
+				33013BE019BA4DBB003AAF84 /* Search@2x.png */,
+				33013BE119BA4DBB003AAF84 /* separator_line.png */,
+				33013BE219BA4DBB003AAF84 /* solutions.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		33013BEF19BA4DF2003AAF84 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				33013BF019BA4E0E003AAF84 /* GCDCalc.h */,
+				33013BF119BA4E0E003AAF84 /* GCDCalc.m */,
+				33013BF219BA4E0E003AAF84 /* LDECalc.h */,
+				33013BF319BA4E0E003AAF84 /* LDECalc.m */,
+				33013BF419BA4E0E003AAF84 /* RSSolver.h */,
+				33013BF519BA4E0E003AAF84 /* RSSolver.m */,
+			);
+			name = Calculators;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		33013BF919BA4E28003AAF84 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33013BFA19BA4E75003AAF84 /* AboutViewController.h */,
+				33013BFB19BA4E75003AAF84 /* AboutViewController.m */,
+				33013BFC19BA4E75003AAF84 /* DivModViewController.h */,
+				33013BFD19BA4E75003AAF84 /* DivModViewController.m */,
+				33013BFE19BA4E75003AAF84 /* GCDViewController.h */,
+				33013BFF19BA4E75003AAF84 /* GCDViewController.m */,
+				33013C0019BA4E75003AAF84 /* LDEViewController.h */,
+				33013C0119BA4E75003AAF84 /* LDEViewController.m */,
+				33013C0219BA4E75003AAF84 /* LinearCongruenceViewController.h */,
+				33013C0319BA4E75003AAF84 /* LinearCongruenceViewController.m */,
+				33013C0519BA4E75003AAF84 /* RepeatedSquaringViewController.h */,
+				33013C0619BA4E75003AAF84 /* RepeatedSquaringViewController.m */,
+				33013C0719BA4E75003AAF84 /* ViewController.h */,
+				33013C0819BA4E75003AAF84 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		33013C1119BA4EA6003AAF84 /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				33013C1219BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.h */,
+				33013C1319BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.m */,
+			);
+			name = Sliders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33013B9B19BA4D62003AAF84 /* DMCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33013BD119BA4D63003AAF84 /* Build configuration list for PBXNativeTarget "DMCalc" */;
+			buildPhases = (
+				33013B9819BA4D62003AAF84 /* Sources */,
+				33013B9919BA4D62003AAF84 /* Frameworks */,
+				33013B9A19BA4D62003AAF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMCalc;
+			productName = DMCalc;
+			productReference = 33013B9C19BA4D62003AAF84 /* DMCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33013BBF19BA4D63003AAF84 /* DMCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33013BD419BA4D63003AAF84 /* Build configuration list for PBXNativeTarget "DMCalcTests" */;
+			buildPhases = (
+				33013BBC19BA4D63003AAF84 /* Sources */,
+				33013BBD19BA4D63003AAF84 /* Frameworks */,
+				33013BBE19BA4D63003AAF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33013BC619BA4D63003AAF84 /* PBXTargetDependency */,
+			);
+			name = DMCalcTests;
+			productName = DMCalcTests;
+			productReference = 33013BC019BA4D63003AAF84 /* DMCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33013B9419BA4D62003AAF84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Timothy Tong";
+				TargetAttributes = {
+					33013BBF19BA4D63003AAF84 = {
+						TestTargetID = 33013B9B19BA4D62003AAF84;
+					};
+				};
+			};
+			buildConfigurationList = 33013B9719BA4D62003AAF84 /* Build configuration list for PBXProject "DMCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33013B9319BA4D62003AAF84;
+			productRefGroup = 33013B9D19BA4D62003AAF84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33013B9B19BA4D62003AAF84 /* DMCalc */,
+				33013BBF19BA4D63003AAF84 /* DMCalcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33013B9A19BA4D62003AAF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013BE819BA4DBB003AAF84 /* Line_short.png in Resources */,
+				33013BED19BA4DBB003AAF84 /* solutions.png in Resources */,
+				33013BB619BA4D62003AAF84 /* Main_iPad.storyboard in Resources */,
+				33013BBB19BA4D62003AAF84 /* Images.xcassets in Resources */,
+				33013BE919BA4DBB003AAF84 /* Line_vertical.png in Resources */,
+				33013BE319BA4DBB003AAF84 /* Calculator@2x.png in Resources */,
+				33013BE419BA4DBB003AAF84 /* cancel.png in Resources */,
+				33013BE719BA4DBB003AAF84 /* line_long.png in Resources */,
+				33013BE519BA4DBB003AAF84 /* Favorites@2x.png in Resources */,
+				33013BEB19BA4DBB003AAF84 /* Search@2x.png in Resources */,
+				33013BEC19BA4DBB003AAF84 /* separator_line.png in Resources */,
+				33013BB319BA4D62003AAF84 /* Main_iPhone.storyboard in Resources */,
+				33013BE619BA4DBB003AAF84 /* leftArrow.png in Resources */,
+				33013BEA19BA4DBB003AAF84 /* rightArrow.png in Resources */,
+				33013BAA19BA4D62003AAF84 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33013BBE19BA4D63003AAF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013BCC19BA4D63003AAF84 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33013B9819BA4D62003AAF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013C0919BA4E75003AAF84 /* AboutViewController.m in Sources */,
+				33013BF819BA4E0E003AAF84 /* RSSolver.m in Sources */,
+				33013BF619BA4E0E003AAF84 /* GCDCalc.m in Sources */,
+				33013C1419BA4EBD003AAF84 /* RepeatedSquaringSolutionsSlider.m in Sources */,
+				33013C0B19BA4E75003AAF84 /* GCDViewController.m in Sources */,
+				33013C0D19BA4E75003AAF84 /* LinearCongruenceViewController.m in Sources */,
+				33013C0C19BA4E75003AAF84 /* LDEViewController.m in Sources */,
+				33013C1019BA4E75003AAF84 /* ViewController.m in Sources */,
+				33013BF719BA4E0E003AAF84 /* LDECalc.m in Sources */,
+				33013BB019BA4D62003AAF84 /* AppDelegate.m in Sources */,
+				33013C0F19BA4E75003AAF84 /* RepeatedSquaringViewController.m in Sources */,
+				33013BAC19BA4D62003AAF84 /* main.m in Sources */,
+				33013C0A19BA4E75003AAF84 /* DivModViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33013BBC19BA4D63003AAF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33013BCE19BA4D63003AAF84 /* DMCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33013BC619BA4D63003AAF84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33013B9B19BA4D62003AAF84 /* DMCalc */;
+			targetProxy = 33013BC519BA4D63003AAF84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33013BA819BA4D62003AAF84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33013BA919BA4D62003AAF84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		33013BB119BA4D62003AAF84 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33013BB219BA4D62003AAF84 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		33013BB419BA4D62003AAF84 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33013BB519BA4D62003AAF84 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		33013BCA19BA4D63003AAF84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33013BCB19BA4D63003AAF84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33013BCF19BA4D63003AAF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33013BD019BA4D63003AAF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33013BD219BA4D63003AAF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMCalc/DMCalc-Prefix.pch";
+				INFOPLIST_FILE = "DMCalc/DMCalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		33013BD319BA4D63003AAF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMCalc/DMCalc-Prefix.pch";
+				INFOPLIST_FILE = "DMCalc/DMCalc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		33013BD519BA4D63003AAF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMCalc.app/DMCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMCalc/DMCalc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DMCalcTests/DMCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		33013BD619BA4D63003AAF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMCalc.app/DMCalc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMCalc/DMCalc-Prefix.pch";
+				INFOPLIST_FILE = "DMCalcTests/DMCalcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33013B9719BA4D62003AAF84 /* Build configuration list for PBXProject "DMCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33013BCF19BA4D63003AAF84 /* Debug */,
+				33013BD019BA4D63003AAF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33013BD119BA4D63003AAF84 /* Build configuration list for PBXNativeTarget "DMCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33013BD219BA4D63003AAF84 /* Debug */,
+				33013BD319BA4D63003AAF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		33013BD419BA4D63003AAF84 /* Build configuration list for PBXNativeTarget "DMCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33013BD519BA4D63003AAF84 /* Debug */,
+				33013BD619BA4D63003AAF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33013B9419BA4D62003AAF84 /* Project object */;
+}

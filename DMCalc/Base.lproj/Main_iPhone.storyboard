@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pVy-0e-emI">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="24k-tS-5LA"/>
+                        <viewControllerLayoutGuide type="bottom" id="MXr-Ua-69Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discrete Math Calculator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xbs-I9-EtM">
+                                <rect key="frame" x="20" y="104" width="280" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greatest Common Divisor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0G-f4-qwe">
+                                <rect key="frame" x="60" y="293" width="200" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Linear Diophantine Equation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpk-rK-s1H">
+                                <rect key="frame" x="60" y="368" width="200" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Linear) Congruence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-hh-dex">
+                                <rect key="frame" x="60" y="440" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxC-Uf-KZA">
+                                <rect key="frame" x="128" y="255" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="GCD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iBt-iS-gRw" kind="push" identifier="switchToGCD" id="sIU-i7-Rok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-jK-tLH">
+                                <rect key="frame" x="128" y="330" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="LDE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rON-b0-wwP" kind="push" id="9MD-qI-6JV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w36-HM-jZQ">
+                                <rect key="frame" x="128" y="402" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="MOD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ust-If-Qvy" kind="push" id="s6P-wF-pDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrI-hJ-jhh">
+                                <rect key="frame" x="256" y="534" width="57" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="ABOUT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WwS-iV-myd" kind="push" identifier="switchToAbout" id="YVU-HQ-mc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mIY-Mo-OXc"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="hrI-hJ-jhh" id="1so-RT-cgK"/>
+                        <outlet property="gcdButton" destination="yxC-Uf-KZA" id="ebn-A2-T7W"/>
+                        <outlet property="gcdLabel" destination="c0G-f4-qwe" id="yKa-hf-zdJ"/>
+                        <outlet property="header" destination="xbs-I9-EtM" id="HeK-Ca-kTg"/>
+                        <outlet property="ldeButton" destination="0PY-jK-tLH" id="U8L-Dg-ZTC"/>
+                        <outlet property="ldeLabel" destination="Lpk-rK-s1H" id="pG4-2X-9aL"/>
+                        <outlet property="modButton" destination="w36-HM-jZQ" id="kHP-H4-OIZ"/>
+                        <outlet property="modLabel" destination="g5H-hh-dex" id="ofy-NX-njK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="68"/>
+        </scene>
+        <!--Repeated Squaring View Controller - Repeated Squaring-->
+        <scene sceneID="zz2-MX-mKh">
+            <objects>
+                <viewController id="Xqg-1J-NLg" customClass="RepeatedSquaringViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bm2-4G-1aH"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5N-G3-k1U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b27-mM-pY4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Repeated Squaring" image="Favorites.png" id="1LB-uK-Hli"/>
+                    <navigationItem key="navigationItem" title="Repeated Squaring" id="se1-Nh-y0U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfu-VR-Jlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="1244"/>
+        </scene>
+        <!--Div Mod View Controller - DivMod Calculator-->
+        <scene sceneID="AGk-NB-Tg6">
+            <objects>
+                <viewController id="ak8-aE-7VY" customClass="DivModViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cxx-YK-oKH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wX1-93-IVd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ilu-CK-hYA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DivMod" image="Calculator.png" id="QCM-yH-hyG"/>
+                    <navigationItem key="navigationItem" title="DivMod Calculator" id="Suh-OW-Bw6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paA-vd-KfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="-217"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="fk9-8l-nr7">
+            <objects>
+                <viewController id="WwS-iV-myd" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O0p-pE-flt"/>
+                        <viewControllerLayoutGuide type="bottom" id="nDc-bU-Zjl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cWD-ol-6eF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnH-gT-QBj">
+                                <rect key="frame" x="20" y="82" width="280" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="YB1-XL-iME">
+                                <rect key="frame" x="20" y="144" width="280" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Hi there!  Thanks so much for checking out this app!  Hope you're having fun with Discrete Mathematics, and finding this app useful!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="WlX-AN-Y9m">
+                                <rect key="frame" x="20" y="261" width="280" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">I'm willing to improve and perfect this app!  Please, if you found any problem/bug or had any suggestion regarding the user interface or functions, feel free to fire anything you have in mind at me!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you very much!" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yyO-6R-ZDN">
+                                <rect key="frame" x="20" y="378" width="280" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Email:" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-8N-TGs">
+                                <rect key="frame" x="20" y="413" width="280" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="me@timothytong.com" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zzk-Ar-7ar">
+                                <rect key="frame" x="20" y="438" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="© Timothy Tong, 2014, All rights reserved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sn-js-7z3">
+                                <rect key="frame" x="0.0" y="547" width="322" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xcJ-4P-J7X"/>
+                    <connections>
+                        <outlet property="aboutLabel" destination="LnH-gT-QBj" id="adp-qd-RTK"/>
+                        <outlet property="crLabel" destination="3Sn-js-7z3" id="jmf-S9-Gao"/>
+                        <outlet property="paragraphFive" destination="zzk-Ar-7ar" id="e9T-OK-s0K"/>
+                        <outlet property="paragraphFour" destination="UW3-8N-TGs" id="b30-AM-D8z"/>
+                        <outlet property="paragraphOne" destination="YB1-XL-iME" id="cbO-un-igw"/>
+                        <outlet property="paragraphThree" destination="yyO-6R-ZDN" id="T3o-iO-IPP"/>
+                        <outlet property="paragraphTwo" destination="WlX-AN-Y9m" id="X2Z-V5-r5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAI-Uh-7ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="722"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6VC-NR-r6Y">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="ust-If-Qvy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rS0-BG-99w"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="CaQ-tJ-h2f">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ak8-aE-7VY" kind="relationship" relationship="viewControllers" id="GUS-SG-vKF"/>
+                        <segue destination="kC8-VB-kFG" kind="relationship" relationship="viewControllers" id="2Dj-V4-ahJ"/>
+                        <segue destination="Xqg-1J-NLg" kind="relationship" relationship="viewControllers" id="hlC-0c-a72"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1b-w4-h8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="767"/>
+        </scene>
+        <!--Linear Congruence View Controller - Linear Congruence-->
+        <scene sceneID="exj-AG-ulW">
+            <objects>
+                <viewController id="kC8-VB-kFG" customClass="LinearCongruenceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kcK-nb-7eg"/>
+                        <viewControllerLayoutGuide type="bottom" id="6BW-1u-msO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A3m-Yu-4ia">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Linear Congruence" image="Search.png" id="pEK-Ta-vzl"/>
+                    <navigationItem key="navigationItem" title="Linear Congruence" id="zp6-MB-mbc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyD-mS-Pya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="507"/>
+        </scene>
+        <!--View Controller - LDE Solver-->
+        <scene sceneID="bGz-HM-69r">
+            <objects>
+                <viewController id="rON-b0-wwP" customClass="LDEViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ndD-vA-j0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSw-XT-ohV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wi-kh-loj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LDE Solver" id="qlr-6N-fca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uca-IL-eDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="69"/>
+        </scene>
+        <!--View Controller - GCD Calculator-->
+        <scene sceneID="DgC-Jd-ytK">
+            <objects>
+                <viewController id="iBt-iS-gRw" customClass="GCDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nzl-NB-imt"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZb-3b-ob5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eY7-Pu-2Up">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GCD Calculator" id="Tm1-7R-ucv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxH-2Z-Omi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="-605"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TwW-aX-NGN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pVy-0e-emI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rtu-5f-bck">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ljp-xi-r3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjE-Lo-czi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calculator.png" width="25" height="25"/>
+        <image name="Favorites.png" width="27" height="26"/>
+        <image name="Search.png" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
